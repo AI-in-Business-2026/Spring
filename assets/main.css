@@ -78,9 +78,10 @@ text-decoration: none;
 }
 
 .brand-text {
-color: #003B73;
-font-weight: 600;
-font-size: 1.15rem;
+  color: #003B73;
+  font-weight: 800;   /* stronger bold */
+  font-size: 1.8rem;  /* bigger text */
+  letter-spacing: 0.5px; /* optional: gives a premium look */
 }
 
 .nav-links {
@@ -110,7 +111,7 @@ HERO SECTION
 .hero {
 background: linear-gradient(135deg, #003B73 0%, #D29ACD 100%);
 color: #fff;
-padding: 100px 24px;
+padding: 20px 24px;
 position: relative;
 overflow: hidden;
 }
@@ -260,7 +261,7 @@ text-align: left;
 /* -------------------------------------------------
 SUBMISSION REQUIREMENTS & IMPORTANT DATES
 -------------------------------------------------- */
-#submission-dates .submission-content {
+#important-dates .submission-content {
 max-width: 700px;
 margin: 0 auto;
 text-align: center;
@@ -269,42 +270,49 @@ color: #444;
 line-height: 1.6;
 }
 
-#submission-dates .submission-content a {
+#important-dates .submission-content a {
 color: #D29ACD;
 text-decoration: none;
 }
 
-#submission-dates .submission-content a:hover {
+#important-dates .submission-content a {
 color: #003B73;
 text-decoration: underline;
 }
 
-#submission-dates .important-dates-list {
-  list-style: none;       /* remove default bullets */
-  padding: 0;
-  margin: 16px auto 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;    /* center all items horizontally */
-  gap: 8px;               /* space between items */
+#important-dates .important-dates-list {
+list-style: none;
+padding: 0;
+margin: 16px auto 0 auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 8px;
 }
 
-#submission-dates .important-dates-list li {
-  display: flex;           /* make li a flex container */
-  align-items: center;     /* vertically center bullet and text */
-  justify-content: center; /* horizontally center content */
-  gap: 6px;                /* space between bullet and text */
-  font-weight: 500;
-  color: #003B73;
-  font-size: 1.1rem;
+#important-dates .important-dates-list li {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 6px;
+font-weight: 500;
+color: #003B73;
+font-size: 1.1rem;
 }
 
-/* custom bullet */
-#submission-dates .important-dates-list li::before {
-  content: "•";           /* bullet symbol */
-  color: #003B73;
-  font-size: 1.2em;
-  line-height: 1;
+#important-dates .important-dates-list li::before {
+content: "•";
+color: #003B73;
+font-size: 1.2em;
+line-height: 1;
+}
+.important-dates-highlight {
+  text-align: center;
+  font-size: 4rem;     /* larger text */
+  font-weight: 700;       /* bold */
+  color: #003B73;         /* your theme blue */
+  line-height: 2;       /* spacing between lines */
+  margin: 30px 0;         /* space around the block */
 }
 
 
@@ -313,15 +321,11 @@ ORGANIZERS
 -------------------------------------------------- */
 .main-organizers {
 display: grid;
-grid-template-columns: repeat(4, 1fr);
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 gap: 40px;
 margin-top: 40px;
-}
-
-.supporting-organizers {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 30px;
+justify-items: center; /* center each card horizontally */
+align-items: start;   /* align all cards to top */
 }
 
 .organizer {
@@ -329,6 +333,7 @@ text-align: center;
 display: flex;
 flex-direction: column;
 align-items: center;
+min-height: 350px; /* ensures all cards are same height */
 }
 
 .organizer img {
@@ -336,19 +341,34 @@ width: 170px;
 height: 170px;
 border-radius: 50%;
 object-fit: cover;
-margin: 0 auto;
 border: 5px solid #D29ACD;
+margin-bottom: 12px;
 }
 
 .organizer h3 {
-margin-top: 16px;
+margin: 0 0 4px;
 color: #003B73;
 font-size: 1.25rem;
 }
 
+.chair-title {
+font-weight: 800;
+color: #003B73;
+font-size: 1.1rem;
+display: block;
+margin-bottom: 6px;
+min-height: 1.2em; /* keeps spacing even if empty */
+}
+
 .organizer p {
 color: #555;
-margin-top: 6px;
+margin: 0 0 6px;
+min-height: 40px;
+}
+
+.organizer-email {
+margin-top: auto; /* pushes email to bottom */
+display: block;
 }
 
 /* -------------------------------------------------
@@ -362,15 +382,13 @@ margin-top: 30px;
 }
 
 #supporting-committee .organizer img {
-width: 150px;
-height: 150px;
-border-radius: 50%;
-border: 4px solid #D29ACD;
+  display: none;
 }
 
 /* -------------------------------------------------
 SCHEDULE TABLE
 -------------------------------------------------- */
+
 .table-wrapper {
 overflow: hidden;
 border-radius: 12px;
