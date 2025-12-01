@@ -374,15 +374,22 @@ display: block;
 /* -------------------------------------------------
 SUPPORTING COMMITTEE
 -------------------------------------------------- */
-#supporting-committee .organizers {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-gap: 30px;
-margin-top: 30px;
+#supporting-committee .organizer {
+  margin: 0;              /* remove outside spacing */
+  padding: 0;
 }
 
-#supporting-committee .organizer img {
-  display: none;
+#supporting-committee .organizer h3 {
+  margin: 0;              /* no extra space above/below */
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #003B73;         /* optional */
+}
+
+#supporting-committee .organizer p {
+  margin: 2px 0 0 0;      /* very small space below name */
+  font-size: 0.95rem;
+  color: #444;
 }
 
 /* -------------------------------------------------
