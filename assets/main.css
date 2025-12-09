@@ -1,3 +1,5 @@
+/*
+
 ---
 
 ## main.css — Professional + Minimal (Blue/Lavender Theme)
@@ -225,6 +227,12 @@ height: auto;
     flex: 1 1 40%;
   }
 }
+@media (max-width: 600px) {
+  .hero-buttons a {
+    max-width: 160px;
+    font-size: 0.95rem;
+  }
+}
 /* -------------------------------------------------
 SECTION HEADINGS
 -------------------------------------------------- */
@@ -234,7 +242,7 @@ margin: 90px 0;
 
 .panel h2 {
 font-family: 'Roboto Slab', serif;
-font-size: 2.8rem;
+font-size: 2rem;
 text-align: center;
 color: #003B73;
 margin-bottom: 40px;
