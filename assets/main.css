@@ -192,7 +192,18 @@ width: 100%;
 max-width: 400px;
 height: auto;
 }
+/* Keep hero buttons in one row on mobile */
+.hero .btn-primary {
+  display: inline-flex;
+  white-space: nowrap;
+}
 
+@media (max-width: 600px) {
+  .hero .btn-primary {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+}
 /* -------------------------------------------------
 SECTION HEADINGS
 -------------------------------------------------- */
