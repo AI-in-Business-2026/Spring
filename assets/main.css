@@ -204,6 +204,27 @@ height: auto;
     padding: 10px 12px;
   }
 }
+/* Mobile-friendly button layout */
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.hero-buttons a {
+  flex: 1 1 auto;
+  min-width: 120px;
+  max-width: 200px;
+  text-align: center;
+}
+
+/* Force clean wrapping on small screens */
+@media (max-width: 600px) {
+  .hero-buttons a {
+    flex: 1 1 40%;
+  }
+}
 /* -------------------------------------------------
 SECTION HEADINGS
 -------------------------------------------------- */
