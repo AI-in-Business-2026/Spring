@@ -469,3 +469,34 @@ margin-left: 16px;
 font-size: 2.2rem;
 }
 }
+/* Topics heading styled like other sections but smaller */
+#topics .topics-title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #003B73;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+#topics .topics-title::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background: #D29ACD;
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+/* Center text for Format of Symposium and Attendance */
+#format {
+  text-align: center;
+}
+
+#format p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
