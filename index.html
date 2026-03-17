@@ -10,6 +10,14 @@
 
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="assets/main.css">
+  <style>
+    table.schedule { font-size: 0.68rem; border-collapse: collapse; width: 100%; }
+    table.schedule th, table.schedule td { border: 1px solid #d0d0d0; padding: 6px 8px; vertical-align: top; }
+    table.schedule thead th { border-bottom: 2px solid #003B73; border-top: none; }
+    table.schedule tr.day-divider td { border-top: 3px solid #003B73 !important; }
+    table.schedule ul { font-size: 0.68rem; margin: 0; padding-left: 1.1rem; }
+    table.schedule li { margin-bottom: 3px; }
+  </style>
 </head>
 <body>
 
@@ -225,6 +233,7 @@
   <div class="organizers main-organizers">
 
     <div class="organizer">
+      <img src="assets/JavidProfilePhoto.jpeg" alt="Javid Huseynov">
       <h3>Javid Huseynov</h3>
       <span class="chair-title">Keynote Speaker</span>
       <p>Associate Professor of Practice, Applied Analytics<br>Columbia University, New York, NY</p>
@@ -251,45 +260,143 @@
   </div>
 </section>
 
-    <!-- ===================== SCHEDULE ===================== 
+    <!-- ===================== SCHEDULE ===================== -->
     <section id="schedule" class="panel">
-      <h2>Schedule</h2>
-
+      <h2>Program Schedule</h2>
+      <p style="margin-bottom:1rem; font-size:0.95rem;">Note: Each paper/abstract presenter has 20&ndash;25 min presentation + Q&amp;A. Room assignments TBD.</p>
       <div class="table-wrapper">
         <table class="schedule">
           <thead>
             <tr>
-              <th>Day</th>
               <th>Date</th>
               <th>Time</th>
-              <th>Activity</th>
+              <th>Session</th>
+              <th>Chair</th>
+              <th>Presentations</th>
             </tr>
           </thead>
-
           <tbody>
+            <!-- April 7 -->
             <tr>
-              <td rowspan="7">Day 1</td>
-              <td rowspan="7">April 7</td>
-              <td>09:00–10:30</td>
-              <td>Session 1 (3–4 Presentations)</td>
+              <td rowspan="7"><strong>April 7</strong><br>Tuesday</td>
+              <td>9:00&ndash;10:30 AM</td>
+              <td><strong>Session 1</strong></td>
+              <td>Bruno Kamdem</td>
+              <td>
+                <ul style="margin:0; padding-left:1.2rem;">
+                  <li>Paul LaPosta, <strong>"Conflict as Telemetry for Illegible AI: Governing LLM Agent Workflows"</strong></li>
+                  <li>Matthew Michel &amp; Gordon Jackson, <strong>"Agentic workflows for customer engagement"</strong></li>
+                  <li>Matthew Michelson, Adrien Bibal &amp; Steven Minton, <strong>"Agents on a LEASH: A Case Study in Micro-Managing Web Agent Behavior"</strong></li>
+                </ul>
+              </td>
             </tr>
-
-            <tr><td>10:30–11:00</td><td>Coffee Break</td></tr>
-            <tr><td>11:00–12:30</td><td>Session 2 (3–4 Presentations)</td></tr>
-            <tr><td>12:30–14:00</td><td>Lunch Break</td></tr>
-            <tr><td>14:00–15:30</td><td>Workshop 1 (led by Mohammed Quazi)</td></tr>
-            <tr><td>15:30–16:00</td><td>Coffee Break</td></tr>
-            <tr><td>16:00–17:00</td><td>Invited Speaker: Parisa Rashidi</td></tr>
+            <tr>
+              <td>10:30&ndash;11:00 AM</td>
+              <td colspan="3" style="text-align:center; color:#888; font-style:italic;">&#9749; Coffee Break</td>
+            </tr>
+            <tr>
+              <td>11:00 AM&ndash;12:30 PM</td>
+              <td><strong>Session 2</strong></td>
+              <td>Mohammed Quazi</td>
+              <td>
+                <ul style="margin:0; padding-left:1.2rem;">
+                  <li>Ravi Gupta et al. <strong>"Heterogeneous Graph Attention Networks for Multi-Echelon Supply Chain Demand Propagation"</strong> </li>
+                  <li>Sayantan Chakraborty et al. <strong>"Intelligent Health Intervention System for Syndemic Management Among University Students"</strong> </li>
+                  <li>Fatemeh Mosaiyebzadeh &amp; Nahid Jafari,  <strong>"Towards Carrier-Level Airline Passenger Demand Forecasting: A Hierarchical Attention Framework for Strategic Planning"</strong></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>12:30&ndash;2:00 PM</td>
+              <td colspan="3" style="text-align:center; color:#888; font-style:italic;">&#127860; Lunch Break</td>
+            </tr>
+            <tr>
+              <td>2:00&ndash;3:30 PM</td>
+              <td><strong>Session 3 - Keynote</strong></td>
+              
+              <td>Mohammed Quazi</td>
+              <td><strong>Dr. Javid Hasanov</strong> (Columbia University)<br><strong>"Ownership Graph Inference with Large Language Models for Governance Risk Scoring"</strong></td>
+            </tr>
+            <tr>
+              <td>3:30&ndash;4:00 PM</td>
+              <td colspan="3" style="text-align:center; color:#888; font-style:italic;">&#9749; Coffee Break</td>
+            </tr>
+            <tr>
+              <td>4:00&ndash;5:00 PM</td>
+              <td><strong>Session 4 - Workshop</strong></td>
+              <td>&mdash;</td>
+              <td><strong>Bruno Kamdem &amp; Mohammed Quazi</strong> &mdash; AI Agents in Business</td>
+            </tr>
+            <!-- April 8 -->
+            <tr class="day-divider">
+              <td rowspan="7"><strong>April 8</strong><br>Wednesday</td>
+              <td>9:00&ndash;10:30 AM</td>
+              <td><strong>Session 5</strong></td>
+              <td>Mohammed Quazi</td>
+              <td>
+                <ul style="margin:0; padding-left:1.2rem;">
+                  <li>Filip Habdas &amp; Liyuan Liu, <strong>"FedMat: A Federated Multimodal Materiality Framework for Trustworthy Financial Document Analysis"</strong></li>
+                  <li>Romana Afroze,  <strong>"When Algorithms Sail without Owners: Insurance Design for Agentic AI Harm"</strong></li>
+                  <li>Dat Tran, et al. <strong>"Entropy Guided Diversification and Preference Elicitation in Agentic Recommendation Systems"</strong></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>10:30&ndash;11:00 AM</td>
+              <td colspan="3" style="text-align:center; color:#888; font-style:italic;">&#9749; Coffee Break</td>
+            </tr>
+            <tr>
+              <td>11:00 AM&ndash;12:30 PM</td>
+              <td><strong>Session 6</strong></td>
+              <td>Bruno Kamdem</td>
+              <td>
+                <ul style="margin:0; padding-left:1.2rem;">
+                  <li>Ratna Kandala &amp; Akshata Kishore Moharir,  <strong>"Graph Agents: Scaling Responsible Mental Healthcare"</strong></li>
+                  <li>Kalpan Dharamshi  <strong>"Agentic AI: Autonomous Monitoring and Compliance"</strong> </li>
+                  <li>Praveen Manimangalam,  <strong>"From Tools to Autonomous Agents: Rethinking AI-Driven Business Transformation"</strong></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>12:30&ndash;2:00 PM</td>
+              <td colspan="3" style="text-align:center; color:#888; font-style:italic;">&#127860; Lunch Break</td>
+            </tr>
+            <tr>
+              <td>2:00&ndash;3:30 PM</td>
+              <td><strong>Session 7 - Workshop</strong></td>
+              <td>&mdash;</td>
+              <td>Gangadharan Esakki, <strong>"The Convergence of AI: LLMs, Vision Models, World Models, and the Road to Autonomous Intelligence"</strong></td>
+            </tr>
+            <tr>
+              <td>3:30&ndash;4:00 PM</td>
+              <td colspan="3" style="text-align:center; color:#888; font-style:italic;">&#9749; Coffee Break</td>
+            </tr>
+            <tr>
+              <td>4:00&ndash;5:00 PM</td>
+              <td><strong>Session 8 - Panel</strong></td>
+              <td>Bruno Kamdem</td>
+              <td>Discussion Panel</td>
+            </tr>
+            <!-- April 9 -->
+            <tr class="day-divider">
+              <td><strong>April 9</strong><br>Thursday</td>
+              <td>9:00&ndash;10:30 AM</td>
+              <td><strong>Session 9</strong></td>
+              <td>Fatemeh Mosaiyebzadeh</td>
+              <td>
+                <ul style="margin:0; padding-left:1.2rem;">
+                  <li>Ritish Chugh, <strong>"Designing Reliable Analytics Systems: Semantic Metrics, Validation Pipelines, and AI-Assisted Analysis"</strong></li>
+                  <li>Jeewan Singh, <strong>"Ethical AI Adoption in Business Analytics: Perceptions, Risks, and Organizational Readiness"</strong></li>
+                  <li>Kalpan Dharamshi, <strong>"Agentic AI: Autonomous Decision Making Systems"</strong></li>
+                </ul>
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
-
-      <p class="muted center">Full program coming soon</p>
     </section>
-
+ 
   </main>
-  -->
-  <!-- test commit -->
   <!-- ===================== FOOTER ===================== -->
   <footer class="site-footer">
     <div class="container small">
